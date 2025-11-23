@@ -4,9 +4,10 @@ import { Header } from "@/components/header"
 import { Heart, Share2, MapPin, Truck, Leaf, MessageCircle, Check } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
+import { use } from "react"
 
 interface ProductPageProps {
-  params: { id: string }
+  params: Promise<{ id: string }>
 }
 
 const productDetails: Record<string, any> = {
@@ -41,7 +42,8 @@ const productDetails: Record<string, any> = {
 }
 
 export default function ProdutoPage({ params }: ProductPageProps) {
-  const product = productDetails[params.id] || productDetails["1"]
+  const { id } = use(params)
+  const product = productDetails[id] || productDetails["1"]
   const [quantity, setQuantity] = useState(1)
   const [liked, setLiked] = useState(false)
   const [selectedTab, setSelectedTab] = useState("descricao")

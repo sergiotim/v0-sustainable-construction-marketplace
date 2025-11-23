@@ -125,3 +125,506 @@ It can also happen if the client has a browser extension installed which messes 
 [00:08:00.544] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
 [00:08:00.544] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
 [00:08:00.544] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763915800160}
+[00:09:52.586] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/representante color: rgb(120, 120, 120) color: inherit {"dp":"/representante","o":"http://localhost:3000/representante","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763915912208}
+[00:10:12.070] Server  LOG      ✓ Compiled in 60ms
+[00:10:15.633] Server  LOG      ✓ Compiled in 33ms
+[00:10:23.960] Server  LOG      ✓ Compiled in 72ms
+[00:10:27.127] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:27.256] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:10:27.256] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/fornecedores","route":"/fornecedores"}
+[00:10:27.256] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fornecedores color: rgb(120, 120, 120) color: inherit {"dp":"/fornecedores","o":"http://localhost:3000/fornecedores","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763915946875}
+[00:10:29.362] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:29.477] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:10:29.477] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/representante","route":"/representante"}
+[00:10:29.477] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/representante color: rgb(120, 120, 120) color: inherit {"dp":"/representante","o":"http://localhost:3000/representante","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763915949104}
+[00:11:20.839] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/produtos","o":"http://localhost:3000/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916000455}
+[00:11:27.540] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/produto/1 color: rgb(120, 120, 120) color: inherit {"dp":"/produto/[id]","o":"http://localhost:3000/produto/1","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916007126}
+[00:11:27.540] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:11:27.540] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:11:39.824] Server  LOG     
+[00:11:39.825] Server  LOG     Could not open page.tsx in the editor.
+[00:11:39.825] Server  LOG     
+[00:11:39.826] Server  LOG     When running on Windows, file names are checked against an access list to protect against remote code execution attacks. File names may consist only of alphanumeric characters (all languages), periods, dashes, slashes, and underscores.
+[00:11:39.826] Server  LOG     
+[00:13:09.266] Server  LOG      ✓ Compiled in 109ms
+[00:13:19.424] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:13:19.424] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:13:24.984] Server  LOG      ✓ Compiled in 72ms
+[00:13:28.213] Server  ERROR    ⨯ ./app/fornecedores/loading.tsx:1:1
+Module not found: Can't resolve '@/components/ui/skeleton'
+> 1 | import { Skeleton } from "@/components/ui/skeleton"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function FornecedoresLoading() {
+  4 |   return (
+
+Import map: aliased to relative './components/ui/skeleton' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:28.333] Browser ERROR   ./app/fornecedores/loading.tsx:1:1
+Module not found: Can't resolve '@/components/ui/skeleton'
+> 1 | import { Skeleton } from "@/components/ui/skeleton"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function FornecedoresLoading() {
+  4 |   return (
+
+Import map: aliased to relative './components/ui/skeleton' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:13:29.075] Browser ERROR   ./app/fornecedores/loading.tsx:1:1
+Module not found: Can't resolve '@/components/ui/skeleton'
+> 1 | import { Skeleton } from "@/components/ui/skeleton"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function FornecedoresLoading() {
+  4 |   return (
+
+Import map: aliased to relative './components/ui/skeleton' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:13:29.075] Browser ERROR   ./app/fornecedores/loading.tsx:1:1
+Module not found: Can't resolve '@/components/ui/skeleton'
+> 1 | import { Skeleton } from "@/components/ui/skeleton"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function FornecedoresLoading() {
+  4 |   return (
+
+Import map: aliased to relative './components/ui/skeleton' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:13:29.843] Browser ERROR   ./app/fornecedores/loading.tsx:1:1
+Module not found: Can't resolve '@/components/ui/skeleton'
+> 1 | import { Skeleton } from "@/components/ui/skeleton"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function FornecedoresLoading() {
+  4 |   return (
+
+Import map: aliased to relative './components/ui/skeleton' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:13:29.863] Server  ERROR    ⨯ ./app/fornecedores/loading.tsx:1:1
+Module not found: Can't resolve '@/components/ui/skeleton'
+> 1 | import { Skeleton } from "@/components/ui/skeleton"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function FornecedoresLoading() {
+  4 |   return (
+
+Import map: aliased to relative './components/ui/skeleton' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:30.274] Browser ERROR   uncaughtError: Error: ./app/fornecedores/loading.tsx:1:1
+Module not found: Can't resolve '@/components/ui/skeleton'
+> 1 | import { Skeleton } from "@/components/ui/skeleton"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function FornecedoresLoading() {
+  4 |   return (
+
+Import map: aliased to relative './components/ui/skeleton' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:30.492] Browser ERROR   ./app/fornecedores/loading.tsx:1:1
+Module not found: Can't resolve '@/components/ui/skeleton'
+> 1 | import { Skeleton } from "@/components/ui/skeleton"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function FornecedoresLoading() {
+  4 |   return (
+
+Import map: aliased to relative './components/ui/skeleton' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:13:30.492] Browser ERROR   ./app/fornecedores/loading.tsx:1:1
+Module not found: Can't resolve '@/components/ui/skeleton'
+> 1 | import { Skeleton } from "@/components/ui/skeleton"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function FornecedoresLoading() {
+  4 |   return (
+
+Import map: aliased to relative './components/ui/skeleton' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:13:38.431] Server  ERROR    ⨯ ./app/fornecedores/loading.tsx:1:1
+Module not found: Can't resolve ''
+> 1 | import { Skeleton } from ""
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function FornecedoresLoading() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:38.432] Server  ERROR    ⨯ ./app/fornecedores/loading.tsx:1:1
+Module not found: Can't resolve ''
+> 1 | import { Skeleton } from ""
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function FornecedoresLoading() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:38.594] Browser ERROR   ./app/fornecedores/loading.tsx:1:1
+Module not found: Can't resolve ''
+> 1 | import { Skeleton } from ""
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function FornecedoresLoading() {
+  4 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[00:13:43.420] Browser ERROR   ./app/fornecedores/loading.tsx:1:1
+Module not found: Can't resolve ''
+> 1 | import { Skeleton } from ""
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function FornecedoresLoading() {
+  4 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[00:13:50.547] Server  LOG      ✓ Compiled in 31ms
+[00:13:50.760] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:13:50.788] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\.next\dev\server\chunks\ssr\node_modules_next_dist_a5e197f3._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:13:50.795] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:13:50.801] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:13:50.804] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:13:50.806] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:13:50.810] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:13:50.822] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:13:50.824] Server  ERROR    ⨯ Error: The default export is not a React Component in "/fornecedores/loading"
+[00:13:50.834] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:13:50.835] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\.next\dev\server\chunks\ssr\node_modules_next_dist_a5e197f3._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:13:50.836] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:13:50.837] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:13:50.838] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:13:50.838] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:13:50.839] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:13:50.840] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:13:50.841] Server  ERROR    ⨯ Error: The default export is not a React Component in "/fornecedores/loading"
+[00:13:51.155] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/fornecedores/loading"
+[00:13:51.644] Server  ERROR    ⨯ ./app/fornecedores/loading.tsx:1:1
+Module not found: Can't resolve '@/components/ui/skeleton'
+> 1 | import { Skeleton } from "@/components/ui/skeleton"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function FornecedoresLoading() {
+  4 |   return (
+
+Import map: aliased to relative './components/ui/skeleton' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:51.645] Server  ERROR    ⨯ ./app/fornecedores/loading.tsx:1:1
+Module not found: Can't resolve '@/components/ui/skeleton'
+> 1 | import { Skeleton } from "@/components/ui/skeleton"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function FornecedoresLoading() {
+  4 |   return (
+
+Import map: aliased to relative './components/ui/skeleton' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:51.810] Browser ERROR   ./app/fornecedores/loading.tsx:1:1
+Module not found: Can't resolve '@/components/ui/skeleton'
+> 1 | import { Skeleton } from "@/components/ui/skeleton"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function FornecedoresLoading() {
+  4 |   return (
+
+Import map: aliased to relative './components/ui/skeleton' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:14:09.821] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\.next\dev\server\chunks\ssr\app_fornecedores_loading_tsx_6ca0096d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:09.822] Server  ERROR    ⨯ ReferenceError: Skeleton is not defined
+[00:14:10.261] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:11.072] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
+
+Skeleton is not defined
+[00:14:11.072] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:14:11.072] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/fornecedores","route":"/fornecedores"}
+[00:14:11.072] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fornecedores color: rgb(120, 120, 120) color: inherit {"dp":"/fornecedores","o":"http://localhost:3000/fornecedores","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916170121}
+[00:14:11.117] Server  ERROR    ⨯ ./app/fornecedores/loading.tsx:1:1
+Module not found: Can't resolve '@/components/ui/skeleton'
+> 1 | import { Skeleton } from "@/components/ui/skeleton"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function FornecedoresLoading() {
+  4 |   return (
+
+Import map: aliased to relative './components/ui/skeleton' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:11.118] Server  ERROR    ⨯ ./app/fornecedores/loading.tsx:1:1
+Module not found: Can't resolve '@/components/ui/skeleton'
+> 1 | import { Skeleton } from "@/components/ui/skeleton"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function FornecedoresLoading() {
+  4 |   return (
+
+Import map: aliased to relative './components/ui/skeleton' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:11.136] Server  ERROR    ⨯ ./app/fornecedores/loading.tsx:1:1
+Module not found: Can't resolve '@/components/ui/skeleton'
+> 1 | import { Skeleton } from "@/components/ui/skeleton"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function FornecedoresLoading() {
+  4 |   return (
+
+Import map: aliased to relative './components/ui/skeleton' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:11.137] Server  ERROR    ⨯ ./app/fornecedores/loading.tsx:1:1
+Module not found: Can't resolve '@/components/ui/skeleton'
+> 1 | import { Skeleton } from "@/components/ui/skeleton"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function FornecedoresLoading() {
+  4 |   return (
+
+Import map: aliased to relative './components/ui/skeleton' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:12.081] Browser ERROR   ./app/fornecedores/loading.tsx:1:1
+Module not found: Can't resolve '@/components/ui/skeleton'
+> 1 | import { Skeleton } from "@/components/ui/skeleton"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function FornecedoresLoading() {
+  4 |   return (
+
+Import map: aliased to relative './components/ui/skeleton' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:14:43.664] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\.next\dev\server\chunks\ssr\app_fornecedores_loading_tsx_6ca0096d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:43.664] Server  ERROR    ⨯ ReferenceError: Skeleton is not defined
+[00:14:50.501] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.527] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\.next\dev\server\chunks\ssr\node_modules_next_dist_a5e197f3._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.528] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.529] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.530] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.530] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.531] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.531] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.532] Server  ERROR    ⨯ Error: The default export is not a React Component in "/fornecedores/loading"
+[00:14:50.536] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.537] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\.next\dev\server\chunks\ssr\node_modules_next_dist_a5e197f3._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.538] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.538] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.539] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.541] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.542] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.543] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.543] Server  ERROR    ⨯ Error: The default export is not a React Component in "/fornecedores/loading"
+[00:14:50.641] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.642] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\.next\dev\server\chunks\ssr\node_modules_next_dist_a5e197f3._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.643] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.643] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.644] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.645] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.646] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.647] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.648] Server  ERROR    ⨯ Error: The default export is not a React Component in "/fornecedores/loading"
+[00:14:50.655] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.656] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\.next\dev\server\chunks\ssr\node_modules_next_dist_a5e197f3._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.656] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.657] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.657] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.658] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.658] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.659] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:50.659] Server  ERROR    ⨯ Error: The default export is not a React Component in "/fornecedores/loading"
+[00:14:50.936] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/fornecedores/loading"
+[00:14:54.445] Server  LOG      ✓ Compiled in 37ms
+[00:14:54.546] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\.next\dev\server\chunks\ssr\app_fornecedores_loading_tsx_6ca0096d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:54.547] Server  ERROR    ⨯ ReferenceError: Skeleton is not defined
+[00:14:54.912] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:55.087] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
+
+Skeleton is not defined
+[00:14:55.087] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:14:55.087] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/fornecedores","route":"/fornecedores"}
+[00:14:55.087] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fornecedores color: rgb(120, 120, 120) color: inherit {"dp":"/fornecedores","o":"http://localhost:3000/fornecedores","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916214704}
+[00:14:57.869] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\.next\dev\server\chunks\ssr\app_fornecedores_loading_tsx_6ca0096d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:57.870] Server  ERROR    ⨯ ReferenceError: Skeleton is not defined
+[00:14:59.257] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\.next\dev\server\chunks\ssr\app_fornecedores_loading_tsx_6ca0096d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:59.257] Server  ERROR    ⨯ ReferenceError: Skeleton is not defined
+[00:15:01.521] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\.next\dev\server\chunks\ssr\app_fornecedores_loading_tsx_6ca0096d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:01.524] Server  ERROR    ⨯ ReferenceError: Skeleton is not defined
+[00:15:03.369] Browser ERROR   ./app/fornecedores/loading.tsx:21:14
+Parsing ecmascript source code failed
+  19 |             {[...Array(4)].map((_, i) => (
+  20 |
+> 21 |             ))}
+     |              ^
+  22 |           </div>
+  23 |         </div>
+  24 |       </div>
+
+Expected '</', got ')'
+[00:15:11.270] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:11.401] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:15:11.401] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/fornecedores","route":"/fornecedores"}
+[00:15:11.401] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fornecedores color: rgb(120, 120, 120) color: inherit {"dp":"/fornecedores","o":"http://localhost:3000/fornecedores","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916231020}
+[00:15:13.714] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:13.832] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:15:13.832] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/fornecedores/4","route":"/fornecedores/4"}
+[00:15:13.832] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fornecedores/4 color: rgb(120, 120, 120) color: inherit {"dp":"/fornecedores/4","o":"http://localhost:3000/fornecedores/4","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916233459}
+[00:15:16.068] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:16.068] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/fornecedores" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="pt-BR"
+-                         suppresshydrationwarning="true"
+-                         data-lt-installed="true"
+                        >
+                  ...
+
+[00:15:16.226] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:15:16.226] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/fornecedores","route":"/fornecedores"}
+[00:15:16.226] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fornecedores color: rgb(120, 120, 120) color: inherit {"dp":"/fornecedores","o":"http://localhost:3000/fornecedores","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916235845}
+[00:15:19.106] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916238729}
+[00:16:25.393] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/produtos","o":"http://localhost:3000/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916305018}
+[00:16:27.079] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/produto/2 color: rgb(120, 120, 120) color: inherit {"dp":"/produto/[id]","o":"http://localhost:3000/produto/2","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916306700}
+[00:16:57.369] Server  LOG      ✓ Compiled in 39ms
+[00:17:03.008] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/produtos","o":"http://localhost:3000/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916342629}
+[00:17:04.504] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/produto/1 color: rgb(120, 120, 120) color: inherit {"dp":"/produto/[id]","o":"http://localhost:3000/produto/1","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916344120}
+[00:17:45.027] Server  LOG      ✓ Compiled in 60ms
+[00:17:45.112] Browser ERROR   uncaughtError: Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
+Open your browser's console to view the Component stack trace.
+[00:17:49.689] Server  LOG      ✓ Compiled in 39ms
+[00:17:49.804] Browser ERROR   ./components/header.tsx:33:24
+Parsing ecmascript source code failed
+  31 |             <User size={20} />
+  32 |           </button>
+> 33 |           <Link href={}>
+     |                        ^
+  34 |             <button className="p-2 hover:bg-secondary rounded-lg transition relative">
+  35 |               <ShoppingCart size={20} />
+  36 |               <span className="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/header.tsx [Client Component Browser]
+    ./app/lista-de-materiais/page.tsx [Client Component Browser]
+    ./app/lista-de-materiais/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/header.tsx [Client Component SSR]
+    ./app/lista-de-materiais/page.tsx [Client Component SSR]
+    ./app/lista-de-materiais/page.tsx [Server Component]
+[00:17:49.804] Browser ERROR   ./components/header.tsx:38:12
+Parsing ecmascript source code failed
+  36 |               <span className="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
+  37 |             </button>
+> 38 |           </Link>
+     |            ^^^^^^
+  39 |           <button
+  40 |             className="md:hidden p-2 hover:bg-secondary rounded-lg transition"
+  41 |             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/header.tsx [Client Component Browser]
+    ./app/lista-de-materiais/page.tsx [Client Component Browser]
+    ./app/lista-de-materiais/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/header.tsx [Client Component SSR]
+    ./app/lista-de-materiais/page.tsx [Client Component SSR]
+    ./app/lista-de-materiais/page.tsx [Server Component]
+[00:18:04.746] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:18:04.776] Server  LOG      ✓ Compiled in 57ms
+[00:18:05.342] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:05.488] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:18:05.488] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/produto/1","route":"/produto/[id]"}
+[00:18:05.488] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/produto/1 color: rgb(120, 120, 120) color: inherit {"dp":"/produto/[id]","o":"http://localhost:3000/produto/1","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916405114}
+[00:18:07.336] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/carrinho color: rgb(120, 120, 120) color: inherit {"dp":"/carrinho","o":"http://localhost:3000/carrinho","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916406963}
+[00:18:11.731] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/produtos","o":"http://localhost:3000/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916411353}
+[00:18:14.070] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916413691}
+[00:18:20.542] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/lista-de-materiais color: rgb(120, 120, 120) color: inherit {"dp":"/lista-de-materiais","o":"http://localhost:3000/lista-de-materiais","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916420167}
+[00:18:22.387] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/carrinho color: rgb(120, 120, 120) color: inherit {"dp":"/carrinho","o":"http://localhost:3000/carrinho","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916422005}
+[00:18:30.551] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916430175}
+[00:18:35.273] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:35.400] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:18:35.400] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:18:35.400] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916435016}
+[00:18:38.694] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/produto/3 color: rgb(120, 120, 120) color: inherit {"dp":"/produto/[id]","o":"http://localhost:3000/produto/3","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916438311}
+[00:18:42.064] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/carrinho color: rgb(120, 120, 120) color: inherit {"dp":"/carrinho","o":"http://localhost:3000/carrinho","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916441689}
+[00:18:56.809] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/produtos","o":"http://localhost:3000/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916456424}
+[00:18:58.366] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fornecedores color: rgb(120, 120, 120) color: inherit {"dp":"/fornecedores","o":"http://localhost:3000/fornecedores","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916457991}
+[00:18:59.797] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/representante color: rgb(120, 120, 120) color: inherit {"dp":"/representante","o":"http://localhost:3000/representante","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916459417}
+[00:19:00.786] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fornecedores color: rgb(120, 120, 120) color: inherit {"dp":"/fornecedores","o":"http://localhost:3000/fornecedores","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916460402}
+[00:19:10.315] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763916469942}
