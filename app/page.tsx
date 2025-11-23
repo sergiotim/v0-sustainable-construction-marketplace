@@ -4,6 +4,83 @@ import { Search, MapPin, ShoppingCart, User, Menu } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
+
+type Supplier = {
+  id: number;
+  name: string;
+  city: string;
+  product: string;
+  lat: number;
+  lon: number;
+};
+
+const suppliers: Supplier[] = [
+  {
+    id: 1,
+    name: "Polinorte Sustentáveis",
+    city: "Araguaína-TO",
+    product: "Blocos, pré-moldados, concreto ecológico",
+    lat: -7.19238,
+    lon: -48.2044,
+  },
+  {
+    id: 2,
+    name: "AB Telhas Ecológicas",
+    city: "Araguaína-TO",
+    product: "Telhas ecológicas",
+    lat: -7.19238,
+    lon: -48.2044,
+  },
+  {
+    id: 3,
+    name: "Ecolar Tijolos Ecológicos",
+    city: "Palmas-TO",
+    product: "Tijolos solo-cimento",
+    lat: -10.31715,
+    lon: -48.3014,
+  },
+  {
+    id: 4,
+    name: "Ecotins Tijolos e Construções Ecológicas",
+    city: "Porto Nacional-TO",
+    product: "Tijolos artesanais / cerâmica ecológica",
+    lat: -10.7078,
+    lon: -48.4169,
+  },
+  {
+    id: 5,
+    name: "Cotae Tijolos Ecológicos Ltda",
+    city: "Palmas-TO",
+    product: "Tijolos ecológicos",
+    lat: -10.1844,
+    lon: -48.3336,
+  },
+  {
+    id: 6,
+    name: "Cerâmica Sustentável Paraíso-TO",
+    city: "Paraíso do Tocantins-TO",
+    product: "Telhas e tijolos (casca de arroz)",
+    lat: -10.1722,
+    lon: -48.881,
+  },
+  {
+    id: 10,
+    name: "Madeireira Rio Araguaia",
+    city: "Araguaína-TO",
+    product: "Materiais ecológicos",
+    lat: -7.19083,
+    lon: -48.2069,
+  },
+  {
+    id: 16,
+    name: "LANCI – Madeira Plástica Reciclada",
+    city: "Palmas-TO",
+    product: "Madeira plástica reciclada",
+    lat: -10.1844,
+    lon: -48.3336,
+  },
+];
+
 const products = [
   {
     id: 1,
@@ -11,7 +88,8 @@ const products = [
     price: "R$ 1,87",
     co2: "-13% CO₂",
     category: "Materiais Reciclados",
-    image: "/images/tijolo.jpg", // <-- usar /images/... (public folder)
+    image: "/images/tijolo.jpg",
+    supplierIds: [1, 3, 4, 5, 6],
   },
   {
     id: 2,
@@ -20,6 +98,7 @@ const products = [
     co2: "-15% CO₂",
     category: "Agregados",
     image: "/images/seixo.jpg",
+    supplierIds: [1, 2, 6, 10],
   },
   {
     id: 3,
@@ -28,6 +107,7 @@ const products = [
     co2: "-18% CO₂",
     category: "Estruturas e Pisos",
     image: "/images/telha.jpg",
+    supplierIds: [2, 6],
   },
   {
     id: 4,
@@ -36,6 +116,7 @@ const products = [
     co2: "-26% CO₂",
     category: "Acabamento Sustentável",
     image: "/images/painel.jpg",
+    supplierIds: [1, 5, 10, 16],
   },
 ];
 
@@ -57,8 +138,97 @@ const categories = [
   },
 ];
 
+type LatLng = { lat: number; lon: number };
+
+function toRad(value: number) {
+  return (value * Math.PI) / 180;
+}
+
+function distanceInKm(a: LatLng, b: LatLng): number {
+  const R = 6371; 
+  const dLat = toRad(b.lat - a.lat);
+  const dLon = toRad(b.lon - a.lon);
+  const lat1 = toRad(a.lat);
+  const lat2 = toRad(b.lat);
+
+  const x =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.sin(dLon / 2) *
+      Math.sin(dLon / 2) *
+      Math.cos(lat1) *
+      Math.cos(lat2);
+  const c = 2 * Math.atan2(Math.sqrt(x), Math.sqrt(1 - x));
+  return R * c;
+}
+
+function getNearestSupplierForProduct(
+  userLocation: LatLng,
+  supplierIds?: number[]
+) {
+  const candidates =
+    supplierIds && supplierIds.length > 0
+      ? suppliers.filter((s) => supplierIds.includes(s.id))
+      : suppliers;
+
+  if (!candidates.length) return null;
+
+  let best = candidates[0];
+  let bestDistance = distanceInKm(userLocation, {
+    lat: best.lat,
+    lon: best.lon,
+  });
+
+  for (const s of candidates.slice(1)) {
+    const d = distanceInKm(userLocation, { lat: s.lat, lon: s.lon });
+    if (d < bestDistance) {
+      best = s;
+      bestDistance = d;
+    }
+  }
+
+  return { supplier: best, distanceKm: bestDistance };
+}
+
+
+
+
+
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [userLocation, setUserLocation] = useState<LatLng | null>(null);
+  const [locationStatus, setLocationStatus] = useState<string>("");
+
+  const handleGetLocation = () => {
+    if (typeof window === "undefined" || !("geolocation" in navigator)) {
+      setLocationStatus("Seu navegador não suporta geolocalização.");
+      return;
+    }
+  
+    setLocationStatus("Obtendo sua localização...");
+  
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        setUserLocation({
+          lat: pos.coords.latitude,
+          lon: pos.coords.longitude,
+        });
+  
+        setLocationStatus(
+          "Localização detectada! Já estamos buscando fornecedores próximos."
+        );
+      },
+      (err) => {
+        if (process.env.NODE_ENV !== "production") {
+          console.warn("Erro ao obter localização", err);
+        }
+  
+        setLocationStatus(
+          err?.message ||
+            "Não foi possível obter sua localização. Verifique as permissões do navegador."
+        );
+      }
+    );
+  };  
 
   return (
     <div className="min-h-screen bg-background">
@@ -161,6 +331,23 @@ export default function Home() {
               </button>
             </Link>
           </div>
+
+          {/* Botão de localização */}
+          <div className="mt-6 flex flex-col items-center gap-2 text-sm">
+            <button
+              type="button"
+              onClick={handleGetLocation}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/40 bg-white/10 hover:bg-white/20 transition"
+            >
+              <MapPin size={16} />
+              Usar minha localização para achar fornecedores próximos
+            </button>
+            {locationStatus && (
+              <span className="text-xs opacity-80 max-w-md">
+                {locationStatus}
+              </span>
+            )}
+          </div>
         </div>
       </section>
 
@@ -180,44 +367,57 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {products.map((product) => (
-            <Link key={product.id} href={`/produto/${product.id}`}>
-              <div className="bg-white rounded-2xl overflow-hidden border border-border hover:shadow-lg transition cursor-pointer h-full flex flex-col">
-                <div className="relative h-48 bg-secondary overflow-hidden">
-                  <div className="w-full h-full bg-muted flex items-center justify-center">
-                    {/* Substituir imagem fixa por product.image */}
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="absolute top-3 left-3 bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-semibold">
-                    {product.co2}
-                  </div>
-                </div>
+          {products.map((product) => {
+            const nearest =
+              userLocation != null
+                ? getNearestSupplierForProduct(userLocation, product.supplierIds)
+                : null;
 
-                <div className="p-4 flex-1 flex flex-col">
-                  <h3 className="font-semibold text-foreground mb-2 text-sm">
-                    {product.name}
-                  </h3>
-                  <p className="text-primary font-bold text-lg">
-                    {product.price}
-                  </p>
-                  <p className="text-xs text-muted-foreground mt-auto">
-                    <MapPin size={12} className="inline mr-1" />
-                    12 km de distância
-                  </p>
-                </div>
+            return (
+              <Link key={product.id} href={`/produto/${product.id}`}>
+                <div className="bg-white rounded-2xl overflow-hidden border border-border hover:shadow-lg transition cursor-pointer h-full flex flex-col">
+                  <div className="relative h-48 bg-secondary overflow-hidden">
+                    <div className="w-full h-full bg-muted flex items-center justify-center">
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="absolute top-3 left-3 bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-semibold">
+                      {product.co2}
+                    </div>
+                  </div>
 
-                <div className="p-4 border-t border-border">
-                  <button className="w-full bg-primary text-primary-foreground py-2 rounded-lg hover:opacity-90 transition text-sm font-medium">
-                      Visualizar
-                  </button>
+                  <div className="p-4 flex-1 flex flex-col">
+                    <h3 className="font-semibold text-foreground mb-2 text-sm">
+                      {product.name}
+                    </h3>
+                    <p className="text-primary font-bold text-lg">
+                      {product.price}
+                    </p>
+                    <p className="text-xs text-muted-foreground mt-auto flex items-center gap-1">
+                      <MapPin size={12} />
+                      {nearest && userLocation ? (
+                        <>
+                          {nearest.supplier.city} • ~
+                          {nearest.distanceKm.toFixed(0)} km
+                        </>
+                      ) : (
+                        "Ative sua localização para ver fornecedores próximos"
+                      )}
+                    </p>
+                  </div>
+
+                  <div className="p-4 border-t border-border">
+                    <button className="w-full bg-primary text-primary-foreground py-2 rounded-lg hover:opacity-90 transition text-sm font-medium">
+                      Adicionar ao Carrinho
+                    </button>
+                  </div>
                 </div>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            );
+          })}
         </div>
       </section>
 

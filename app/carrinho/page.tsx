@@ -1,5 +1,6 @@
 "use client";
 
+import jsPDF from "jspdf";
 import { Header } from "@/components/header";
 import { Trash2, Plus, Minus, Lock, Leaf, MapPin } from "lucide-react";
 import Link from "next/link";
@@ -11,8 +12,8 @@ interface CartItem {
   supplier: string;
   price: number;
   quantity: number;
-  co2: number;
-  distance: number;
+  co2: number;      // kg de CO₂ evitado
+  distance: number; // km
   image: string;
 }
 
@@ -25,7 +26,6 @@ const mockCartItems: CartItem[] = [
     quantity: 10,
     co2: 130,
     distance: 5,
-
     image: "/images/tijolo.jpg",
   },
   {
@@ -49,15 +49,15 @@ export default function CartPage() {
       removeItem(id);
       return;
     }
-    setItems(
-      items.map((item) =>
+    setItems((prev) =>
+      prev.map((item) =>
         item.id === id ? { ...item, quantity: newQuantity } : item
       )
     );
   };
 
   const removeItem = (id: number) => {
-    setItems(items.filter((item) => item.id !== id));
+    setItems((prev) => prev.filter((item) => item.id !== id));
   };
 
   const subtotal = items.reduce(
@@ -66,12 +66,128 @@ export default function CartPage() {
   );
   const shipping = subtotal > 0 ? (subtotal * 0.1).toFixed(2) : "0.00";
   const tax = (subtotal * 0.05).toFixed(2);
-  const total = (
-    subtotal +
-    Number.parseFloat(shipping as string) +
-    Number.parseFloat(tax as string)
-  ).toFixed(2);
+  const totalNumber =
+    subtotal + Number.parseFloat(shipping) + Number.parseFloat(tax);
+  const total = totalNumber.toFixed(2);
   const totalCO2 = items.reduce((sum, item) => sum + item.co2, 0);
+
+  const totalQuantity = items.reduce((sum, item) => sum + item.quantity, 0);
+  const avgDistance =
+    totalQuantity > 0
+      ? items.reduce(
+          (sum, item) => sum + item.distance * item.quantity,
+          0
+        ) / totalQuantity
+      : 0;
+
+  // ================================
+  // Geração de Relatório Casa Azul / BNDES (PDF)
+  // ================================
+  const generateCasaAzulBndesReportPdf = () => {
+    const doc = new jsPDF();
+
+    const margin = 10;
+    let y = 15;
+
+    // Cabeçalho
+    doc.setFontSize(16);
+    doc.setFont("helvetica", "bold");
+    doc.text("Relatório Técnico - Materiais Sustentáveis", margin, y);
+    y += 8;
+
+    doc.setFontSize(11);
+    doc.setFont("helvetica", "normal");
+    doc.text("Programas alvo: Casa Azul Caixa / BNDES", margin, y);
+    y += 6;
+
+    doc.setFontSize(9);
+    doc.text(
+      `Data de geração: ${new Date().toLocaleString("pt-BR")}`,
+      margin,
+      y
+    );
+    y += 8;
+
+    // Resumo financeiro
+    doc.setFontSize(12);
+    doc.setFont("helvetica", "bold");
+    doc.text("Resumo Financeiro", margin, y);
+    y += 6;
+
+    doc.setFontSize(10);
+    doc.setFont("helvetica", "normal");
+    doc.text(`Subtotal: R$ ${subtotal.toFixed(2)}`, margin, y);
+    y += 5;
+    doc.text(`Frete: R$ ${shipping}`, margin, y);
+    y += 5;
+    doc.text(`Impostos: R$ ${tax}`, margin, y);
+    y += 5;
+    doc.text(`Total: R$ ${total}`, margin, y);
+    y += 8;
+
+    // Resumo ambiental
+    doc.setFontSize(12);
+    doc.setFont("helvetica", "bold");
+    doc.text("Resumo Ambiental", margin, y);
+    y += 6;
+
+    doc.setFontSize(10);
+    doc.setFont("helvetica", "normal");
+    doc.text(`Total de CO₂ evitado: ${totalCO2} kg`, margin, y);
+    y += 5;
+    doc.text(
+      `Distância média ponderada dos fornecedores: ${avgDistance.toFixed(
+        2
+      )} km`,
+      margin,
+      y
+    );
+    y += 8;
+
+    // Itens
+    doc.setFontSize(12);
+    doc.setFont("helvetica", "bold");
+    doc.text("Detalhamento dos Materiais", margin, y);
+    y += 6;
+
+    doc.setFontSize(9);
+    doc.setFont("helvetica", "normal");
+
+    const addLine = (text: string) => {
+      const lineHeight = 4;
+      // Quebra de página simples
+      if (y > 280) {
+        doc.addPage();
+        y = 15;
+      }
+      doc.text(text, margin, y);
+      y += lineHeight;
+    };
+
+    items.forEach((item, index) => {
+      addLine(
+        `${index + 1}. ${item.name} (Fornecedor: ${item.supplier})`
+      );
+      addLine(
+        `   Quantidade: ${item.quantity} · Preço unitário: R$ ${item.price.toFixed(
+          2
+        )} · Subtotal: R$ ${(item.price * item.quantity).toFixed(2)}`
+      );
+      addLine(
+        `   CO₂ evitado: ${item.co2} kg · Distância do fornecedor: ${item.distance} km`
+      );
+      addLine(" ");
+    });
+
+    addLine(
+      "Observação: Relatório preliminar gerado automaticamente pela plataforma EcoBuild para apoio à"
+    );
+    addLine(
+      "comprovação de uso de materiais sustentáveis em programas Casa Azul Caixa e financiamentos BNDES."
+    );
+
+    doc.save("relatorio-casa-azul-bndes.pdf");
+  };
 
   if (items.length === 0 && step === "cart") {
     return (
@@ -149,11 +265,13 @@ export default function CartPage() {
                     key={item.id}
                     className="bg-white rounded-xl border border-border p-6 flex gap-6"
                   >
-                    {/* Product Image Placeholder */}
-                    <div className="w-32 h-32 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0">
-                      <span className="text-muted-foreground text-sm text-center">
-                        <img src={item.image} alt="" />
-                      </span>
+                    {/* Product Image */}
+                    <div className="w-32 h-32 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
 
                     {/* Product Info */}
@@ -197,7 +315,7 @@ export default function CartPage() {
                         R$ {(item.price * item.quantity).toFixed(2)}
                       </p>
                       <p className="text-sm text-accent mb-4 flex items-center justify-end gap-1">
-                        <Leaf size={14} />-{item.co2} CO₂
+                        <Leaf size={14} />-{item.co2} kg CO₂
                       </p>
                       <button
                         onClick={() => removeItem(item.id)}
@@ -252,7 +370,8 @@ export default function CartPage() {
                     Você está evitando{" "}
                     <strong className="text-accent">
                       {totalCO2} kg de CO₂
-                    </strong>
+                    </strong>{" "}
+                    em relação a materiais convencionais.
                   </p>
                 </div>
 
@@ -374,7 +493,8 @@ export default function CartPage() {
             <div className="bg-white rounded-xl border border-border p-8 space-y-6 mb-6">
               <div className="space-y-4">
                 {[
-                  { id: "pix", label: "PIX", icon: "₿" },
+                  // PIX corrigido (sem símbolo de Bitcoin)
+                  { id: "pix", label: "PIX", icon: "PIX" },
                   { id: "cartao", label: "Cartão de Crédito", icon: "💳" },
                   { id: "boleto", label: "Boleto Bancário", icon: "📄" },
                 ].map((method) => (
@@ -410,12 +530,12 @@ export default function CartPage() {
               </div>
             </div>
 
-            {/* Order Summary */}
+            {/* Order Summary + Relatório */}
             <div className="bg-secondary rounded-xl p-6 mb-6">
-              <div className="space-y-3 text-sm">
+              <div className="space-y-3 text-sm mb-4">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">
-                    Subtotal ({items.length} items)
+                    Subtotal ({items.length} itens)
                   </span>
                   <span className="font-semibold">
                     R$ {subtotal.toFixed(2)}
@@ -433,6 +553,24 @@ export default function CartPage() {
                   <span className="font-bold text-foreground">Total</span>
                   <span className="font-bold text-primary">R$ {total}</span>
                 </div>
+              </div>
+
+              <div className="bg-white/70 rounded-lg p-4 mb-3">
+                <p className="text-sm font-semibold text-foreground mb-1">
+                  Relatório para Casa Azul / BNDES
+                </p>
+                <p className="text-xs text-muted-foreground mb-3">
+                  Gere um relatório técnico em PDF com resumo financeiro e
+                  ambiental desta compra para anexar em dossiês de certificação
+                  Casa Azul Caixa e financiamentos BNDES.
+                </p>
+                <button
+                  type="button"
+                  onClick={generateCasaAzulBndesReportPdf}
+                  className="w-full border border-primary text-primary py-2 rounded-lg hover:bg-primary/5 transition text-sm font-semibold"
+                >
+                  Baixar Relatório Técnico (PDF)
+                </button>
               </div>
             </div>
 
