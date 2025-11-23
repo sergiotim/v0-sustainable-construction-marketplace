@@ -1273,3 +1273,102 @@ Import traces:
 [01:02:40.681] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
 [01:02:40.681] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/carrinho","route":"/carrinho"}
 [01:02:40.681] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/carrinho color: rgb(120, 120, 120) color: inherit {"dp":"/carrinho","o":"http://localhost:3000/carrinho","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920392799}
+[01:07:31.896] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:07:32.050] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:07:32.050] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:07:32.050] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920684157}
+[01:07:53.638] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/lista-de-materiais color: rgb(120, 120, 120) color: inherit {"dp":"/lista-de-materiais","o":"http://localhost:3000/lista-de-materiais","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920705747}
+[01:07:55.255] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920707369}
+[01:08:27.370] Server  LOG      ✓ Compiled in 48ms
+[01:08:27.471] Browser ERROR   uncaughtError: Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
+Open your browser's console to view the Component stack trace.
+[01:08:30.482] Server  LOG      ✓ Compiled in 61ms
+[01:08:30.600] Browser ERROR   ./app/page.tsx:97:26
+Parsing ecmascript source code failed
+   95 |               <User size={20} />
+   96 |             </button>
+>  97 |             <Link href={}>
+      |                          ^
+   98 |               <button className="p-2 hover:bg-secondary rounded-lg transition relative">
+   99 |                 <ShoppingCart size={20} />
+  100 |                 <span className="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:08:30.601] Browser ERROR   ./app/page.tsx:102:14
+Parsing ecmascript source code failed
+  100 |                 <span className="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
+  101 |               </button>
+> 102 |             </Link>
+      |              ^^^^^^
+  103 |             <button
+  104 |               className="md:hidden p-2 hover:bg-secondary rounded-lg transition"
+  105 |               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:08:31.405] Browser ERROR   ./app/page.tsx:97:26
+Parsing ecmascript source code failed
+   95 |               <User size={20} />
+   96 |             </button>
+>  97 |             <Link href={}>
+      |                          ^
+   98 |               <button className="p-2 hover:bg-secondary rounded-lg transition relative">
+   99 |                 <ShoppingCart size={20} />
+  100 |                 <span className="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:08:31.405] Browser ERROR   ./app/page.tsx:102:14
+Parsing ecmascript source code failed
+  100 |                 <span className="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
+  101 |               </button>
+> 102 |             </Link>
+      |              ^^^^^^
+  103 |             <button
+  104 |               className="md:hidden p-2 hover:bg-secondary rounded-lg transition"
+  105 |               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:08:35.682] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:08:35.692] Server  LOG      ✓ Compiled in 47ms
+[01:08:36.362] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:08:36.496] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:08:36.496] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:08:36.496] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920748604}
+[01:09:15.929] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/carrinho color: rgb(120, 120, 120) color: inherit {"dp":"/carrinho","o":"http://localhost:3000/carrinho","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920788040}
+[01:09:17.593] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920789705}
+[01:09:19.189] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/carrinho color: rgb(120, 120, 120) color: inherit {"dp":"/carrinho","o":"http://localhost:3000/carrinho","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920791290}

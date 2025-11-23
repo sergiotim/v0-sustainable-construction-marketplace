@@ -86,7 +86,7 @@ export default function Home() {
               href="/representante"
               className="text-foreground hover:text-primary transition"
             >
-              Nos Represente
+              Fale com Representante
             </Link>
           </div>
 
@@ -94,10 +94,12 @@ export default function Home() {
             <button className="p-2 hover:bg-secondary rounded-lg transition">
               <User size={20} />
             </button>
-            <button className="p-2 hover:bg-secondary rounded-lg transition relative">
-              <ShoppingCart size={20} />
-              <span className="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
-            </button>
+            <Link href={"/carrinho"}>
+              <button className="p-2 hover:bg-secondary rounded-lg transition relative">
+                <ShoppingCart size={20} />
+                <span className="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
+              </button>
+            </Link>
             <button
               className="md:hidden p-2 hover:bg-secondary rounded-lg transition"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
