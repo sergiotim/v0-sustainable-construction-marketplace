@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/sergiogabriel/Documents/GitHub/v0-sustainable-construction-marketplace/app/fornecedores/loading.tsx"],"sourcesContent":["\r\n\r\nexport default function FornecedoresLoading() {\r\n  return (\r\n    <div className=\"min-h-screen bg-background\">\r\n      {/* Header Skeleton */}\r\n\r\n\r\n      {/* Hero Skeleton */}\r\n\r\n\r\n      {/* Content Skeleton */}\r\n      <div className=\"max-w-7xl mx-auto px-4 py-8\">\r\n        <div className=\"flex gap-8\">\r\n          <div className=\"w-64 space-y-4\">\r\n\r\n          </div>\r\n          <div className=\"flex-1 grid grid-cols-2 gap-6\">\r\n\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n"],"names":[],"mappings":";;;;;;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;kBAQb,cAAA,8OAAC;YAAI,WAAU;sBACb,cAAA,8OAAC;gBAAI,WAAU;;kCACb,8OAAC;wBAAI,WAAU;;;;;;kCAGf,8OAAC;wBAAI,WAAU;;;;;;;;;;;;;;;;;;;;;;AAOzB"}}]
-}

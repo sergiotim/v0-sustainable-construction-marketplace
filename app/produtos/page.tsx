@@ -18,7 +18,7 @@ const allProducts = [
   { id: 2, name: "Tijolo Modular Padrão", price: "R$ 1,87", co2: "-13% CO₂", category: "Reciclados", distance: "5km",
     image:"/images/tijolo.jpg" },
   { id: 3, name: "Canaleta Modular", price: "R$ 1,97", co2: "-13% CO₂", category: "Agregados", distance: "12km",
-    image:"/images/cuumeira.webp" },
+    image:"/images/canaleta.jpg" },
   {
     id: 4,
     name: "Cola para Tijolos Ecológicos",
@@ -26,14 +26,14 @@ const allProducts = [
     co2: "-13% CO₂",
     category: "Acabamento",
     distance: "15km",
-    image:"/images/cuumeira.webp"
+    image:"/images/cola.webp"
   },
   { id: 5, name: "Pedra Canga (500g)", price: "R$ 90,00", co2: "-26% CO₂", category: "Agregados", distance: "10km" ,
-    image:"/images/cuumeira.webp"},
+    image:"/images/pedra.webp"},
   { id: 6, name: "Seixo Rolado 0", price: "R$ 90,00", co2: "-15% CO₂", category: "Agregados", distance: "7km" ,
     image:"/images/seixo.jpg"},
   { id: 7, name: "Assoalho MI081", price: "R$ 9,00", co2: "-18% CO₂", category: "Pisos", distance: "20km",
-    image:"/images/cuumeira.webp" },
+    image:"/images/assoalho.png" },
   { id: 8, name: "Telha Ecológica", price: "R$ 50,00", co2: "-17% CO₂", category: "Estruturas", distance: "9km",
     image:"/images/telha.jpg" },
   {
@@ -47,7 +47,7 @@ const allProducts = [
     image:"/images/painel.jpg"
   },
   { id: 10, name: "Canaleta Modular", price: "R$ 1,97", co2: "-13% CO₂", category: "Agregados", distance: "11km",
-    image:"/images/cuumeira.webp" },
+    image:"/images/canaleta.jpg" },
   {
     id: 11,
     name: "Cumueeira Ecológica 6mm",
