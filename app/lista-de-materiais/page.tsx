@@ -255,7 +255,7 @@ export default function ListaMateriais() {
                   <input
                     type="range"
                     min="5"
-                    max="100"
+                    max="1000"
                     value={maxDistance}
                     onChange={(e) => setMaxDistance(Number.parseInt(e.target.value))}
                     className="flex-1 h-2 bg-border rounded-lg appearance-none cursor-pointer"
