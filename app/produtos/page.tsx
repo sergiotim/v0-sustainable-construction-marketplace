@@ -275,7 +275,7 @@ export default function ProdutosPage() {
 
                       <div className="p-4 border-t border-border">
                         <button className="w-full bg-primary text-primary-foreground py-2 rounded-lg hover:opacity-90 transition text-sm font-medium group-hover:shadow-md">
-                          Adicionar
+                          Visualizar
                         </button>
                       </div>
                     </div>

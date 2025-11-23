@@ -128,7 +128,7 @@ export default function Home() {
               href="/representante"
               className="text-foreground hover:text-primary"
             >
-              Nos Represente
+              Fale com Representante
             </Link>
           </div>
         )}
@@ -212,7 +212,7 @@ export default function Home() {
 
                 <div className="p-4 border-t border-border">
                   <button className="w-full bg-primary text-primary-foreground py-2 rounded-lg hover:opacity-90 transition text-sm font-medium">
-                    Adicionar ao Carrinho
+                      Visualizar
                   </button>
                 </div>
               </div>
