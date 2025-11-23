@@ -11,7 +11,7 @@ const products = [
     price: "R$ 1,87",
     co2: "-13% CO₂",
     category: "Materiais Reciclados",
-    image: "/images/order-20history-1.jpeg",
+    image: "/images/tijolo.jpg", // <-- usar /images/... (public folder)
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const products = [
     price: "R$ 90,00",
     co2: "-15% CO₂",
     category: "Agregados",
-    image: "/images/order-20history-1.jpeg",
+    image: "/images/seixo.jpg",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const products = [
     price: "R$ 53,00",
     co2: "-18% CO₂",
     category: "Estruturas e Pisos",
-    image: "/images/order-20history-1.jpeg",
+    image: "/images/telha.jpg",
   },
   {
     id: 4,
@@ -35,30 +35,25 @@ const products = [
     price: "R$ 48,70",
     co2: "-26% CO₂",
     category: "Acabamento Sustentável",
-    image: "/images/order-20history-1.jpeg",
+    image: "/images/painel.jpg",
   },
 ];
 
 const categories = [
   {
     name: "Materiais Reciclados",
-    image: "/images/order-20history-1.jpeg",
+    image: "/images/materiais.jpg",
     slug: "reciclados",
   },
   {
     name: "Acabamento Sustentável",
-    image: "/images/order-20history-1.jpeg",
+    image: "/images/acabamento.jpg",
     slug: "acabamento",
   },
   {
     name: "Estruturas e Pisos",
-    image: "/images/order-20history-1.jpeg",
+    image: "/images/estruturas.jpg",
     slug: "estruturas",
-  },
-  {
-    name: "Materiais Naturais",
-    image: "/images/order-20history-1.jpeg",
-    slug: "naturais",
   },
 ];
 
@@ -71,7 +66,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 bg-white border-b border-border">
         <nav className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-primary">
-            eco
+            ecobuild
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
@@ -188,9 +183,12 @@ export default function Home() {
               <div className="bg-white rounded-2xl overflow-hidden border border-border hover:shadow-lg transition cursor-pointer h-full flex flex-col">
                 <div className="relative h-48 bg-secondary overflow-hidden">
                   <div className="w-full h-full bg-muted flex items-center justify-center">
-                    <span className="text-muted-foreground text-sm">
-                      [Imagem do Produto]
-                    </span>
+                    {/* Substituir imagem fixa por product.image */}
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div className="absolute top-3 left-3 bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-semibold">
                     {product.co2}
@@ -236,7 +234,13 @@ export default function Home() {
               <Link key={category.slug} href={`/categoria/${category.slug}`}>
                 <div className="relative h-48 rounded-2xl overflow-hidden cursor-pointer group">
                   <div className="w-full h-full bg-muted flex items-center justify-center">
-                    <span className="text-muted-foreground">[Imagem]</span>
+                    <span className="text-muted-foreground">
+                      <img
+                        src={category.image}
+                        alt={category.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </span>
                   </div>
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition flex items-center justify-center">
                     <h3 className="text-white font-bold text-xl text-center px-4">

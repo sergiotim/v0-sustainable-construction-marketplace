@@ -30,7 +30,7 @@ function Header() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         href: "/",
                         className: "text-2xl font-bold text-primary",
-                        children: "eco"
+                        children: "ecobuild"
                     }, void 0, false, {
                         fileName: "[project]/components/header.tsx",
                         lineNumber: 13,
@@ -230,7 +230,7 @@ const materialDatabase = {
         co2Reduction: 35,
         distance: "8km",
         quantity: 1,
-        image: "/images/order-20history-1.jpeg"
+        image: "/images/adobe.jpg"
     },
     "brita 1": {
         id: "2",
@@ -242,7 +242,7 @@ const materialDatabase = {
         co2Reduction: 26,
         distance: "10km",
         quantity: 1,
-        image: "/images/order-20history-1.jpeg"
+        image: "/images/seixo.jpg"
     },
     reboco: {
         id: "3",
@@ -254,7 +254,7 @@ const materialDatabase = {
         co2Reduction: 22,
         distance: "12km",
         quantity: 1,
-        image: "/images/order-20history-1.jpeg"
+        image: "/images/reboco.jpg"
     },
     areia: {
         id: "4",
@@ -266,7 +266,7 @@ const materialDatabase = {
         co2Reduction: 30,
         distance: "6km",
         quantity: 1,
-        image: "/images/order-20history-1.jpeg"
+        image: "/images/areia.jpg"
     },
     telha: {
         id: "5",
@@ -278,7 +278,7 @@ const materialDatabase = {
         co2Reduction: 28,
         distance: "9km",
         quantity: 1,
-        image: "/images/order-20history-1.jpeg"
+        image: "/images/telha.jpg"
     },
     tijolos: {
         id: "6",
@@ -290,7 +290,7 @@ const materialDatabase = {
         co2Reduction: 32,
         distance: "5km",
         quantity: 1,
-        image: "/images/order-20history-1.jpeg"
+        image: "/images/tijolo.jpg"
     }
 };
 function ListaMateriais() {

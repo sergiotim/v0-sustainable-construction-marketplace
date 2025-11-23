@@ -36,7 +36,7 @@ const materialDatabase: Record<string, Recommendation> = {
     co2Reduction: 35,
     distance: "8km",
     quantity: 1,
-    image: "/images/order-20history-1.jpeg",
+    image: "/images/adobe.jpg",
   },
   "brita 1": {
     id: "2",
@@ -48,7 +48,7 @@ const materialDatabase: Record<string, Recommendation> = {
     co2Reduction: 26,
     distance: "10km",
     quantity: 1,
-    image: "/images/order-20history-1.jpeg",
+    image: "/images/seixo.jpg",
   },
   reboco: {
     id: "3",
@@ -60,7 +60,7 @@ const materialDatabase: Record<string, Recommendation> = {
     co2Reduction: 22,
     distance: "12km",
     quantity: 1,
-    image: "/images/order-20history-1.jpeg",
+    image: "/images/reboco.jpg",
   },
   areia: {
     id: "4",
@@ -72,7 +72,7 @@ const materialDatabase: Record<string, Recommendation> = {
     co2Reduction: 30,
     distance: "6km",
     quantity: 1,
-    image: "/images/order-20history-1.jpeg",
+    image: "/images/areia.jpg",
   },
   telha: {
     id: "5",
@@ -84,7 +84,7 @@ const materialDatabase: Record<string, Recommendation> = {
     co2Reduction: 28,
     distance: "9km",
     quantity: 1,
-    image: "/images/order-20history-1.jpeg",
+    image: "/images/telha.jpg",
   },
   tijolos: {
     id: "6",
@@ -96,7 +96,7 @@ const materialDatabase: Record<string, Recommendation> = {
     co2Reduction: 32,
     distance: "5km",
     quantity: 1,
-    image: "/images/order-20history-1.jpeg",
+    image: "/images/tijolo.jpg",
   },
 }
 

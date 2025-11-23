@@ -13,9 +13,12 @@ const allProducts = [
     co2: "-13% CO₂",
     category: "Estruturas",
     distance: "8km",
+    image:"/images/cuumeira.webp"
   },
-  { id: 2, name: "Tijolo Modular Padrão", price: "R$ 1,87", co2: "-13% CO₂", category: "Reciclados", distance: "5km" },
-  { id: 3, name: "Canaleta Modular", price: "R$ 1,97", co2: "-13% CO₂", category: "Agregados", distance: "12km" },
+  { id: 2, name: "Tijolo Modular Padrão", price: "R$ 1,87", co2: "-13% CO₂", category: "Reciclados", distance: "5km",
+    image:"/images/tijolo.jpg" },
+  { id: 3, name: "Canaleta Modular", price: "R$ 1,97", co2: "-13% CO₂", category: "Agregados", distance: "12km",
+    image:"/images/cuumeira.webp" },
   {
     id: 4,
     name: "Cola para Tijolos Ecológicos",
@@ -23,20 +26,28 @@ const allProducts = [
     co2: "-13% CO₂",
     category: "Acabamento",
     distance: "15km",
+    image:"/images/cuumeira.webp"
   },
-  { id: 5, name: "Pedra Canga (500g)", price: "R$ 90,00", co2: "-26% CO₂", category: "Agregados", distance: "10km" },
-  { id: 6, name: "Seixo Rolado 0", price: "R$ 90,00", co2: "-15% CO₂", category: "Agregados", distance: "7km" },
-  { id: 7, name: "Assoalho MI081", price: "R$ 9,00", co2: "-18% CO₂", category: "Pisos", distance: "20km" },
-  { id: 8, name: "Telha Ecológica", price: "R$ 50,00", co2: "-17% CO₂", category: "Estruturas", distance: "9km" },
+  { id: 5, name: "Pedra Canga (500g)", price: "R$ 90,00", co2: "-26% CO₂", category: "Agregados", distance: "10km" ,
+    image:"/images/cuumeira.webp"},
+  { id: 6, name: "Seixo Rolado 0", price: "R$ 90,00", co2: "-15% CO₂", category: "Agregados", distance: "7km" ,
+    image:"/images/seixo.jpg"},
+  { id: 7, name: "Assoalho MI081", price: "R$ 9,00", co2: "-18% CO₂", category: "Pisos", distance: "20km",
+    image:"/images/cuumeira.webp" },
+  { id: 8, name: "Telha Ecológica", price: "R$ 50,00", co2: "-17% CO₂", category: "Estruturas", distance: "9km",
+    image:"/images/telha.jpg" },
   {
     id: 9,
     name: "Painél de Parede MW9A4B1",
     price: "R$ 48,70",
     co2: "-26% CO₂",
     category: "Acabamento",
-    distance: "6km",
+    distance: "6km"
+    ,
+    image:"/images/painel.jpg"
   },
-  { id: 10, name: "Canaleta Modular", price: "R$ 1,97", co2: "-13% CO₂", category: "Agregados", distance: "11km" },
+  { id: 10, name: "Canaleta Modular", price: "R$ 1,97", co2: "-13% CO₂", category: "Agregados", distance: "11km",
+    image:"/images/cuumeira.webp" },
   {
     id: 11,
     name: "Cumueeira Ecológica 6mm",
@@ -44,6 +55,7 @@ const allProducts = [
     co2: "-13% CO₂",
     category: "Estruturas",
     distance: "14km",
+    image:"/images/cuumeira.webp"
   },
   {
     id: 12,
@@ -52,6 +64,8 @@ const allProducts = [
     co2: "-13% CO₂",
     category: "Estruturas",
     distance: "8km",
+    
+    image:"/images/cuumeira.webp"
   },
 ]
 
@@ -236,7 +250,9 @@ export default function ProdutosPage() {
                     <div className="bg-white rounded-2xl overflow-hidden border border-border hover:shadow-lg transition cursor-pointer h-full flex flex-col group">
                       <div className="relative h-48 bg-secondary overflow-hidden">
                         <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-secondary to-secondary/80">
-                          <span className="text-muted-foreground">[Imagem]</span>
+                          <span className="text-muted-foreground">
+                            <img src={product.image} alt="" />
+                          </span>
                         </div>
                         <div className="absolute top-3 left-3 bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-semibold">
                           {product.co2}

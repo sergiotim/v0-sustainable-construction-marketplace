@@ -580,10 +580,6 @@
     height: calc(var(--spacing) * 48);
   }
 
-  .h-96 {
-    height: calc(var(--spacing) * 96);
-  }
-
   .h-full {
     height: 100%;
   }

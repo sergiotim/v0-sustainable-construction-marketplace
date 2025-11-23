@@ -37,7 +37,7 @@ const productDetails: Record<string, any> = {
       Garantia: "2 anos",
       Transporte: "Frete incluído",
     },
-    imageUrl: "/images/order-20history-1.jpeg",
+    imageUrl: "/images/tijolo.jpg",
   },
 }
 
@@ -74,7 +74,9 @@ export default function ProdutoPage({ params }: ProductPageProps) {
           <div>
             <div className="bg-secondary rounded-2xl overflow-hidden border border-border mb-4 aspect-square flex items-center justify-center relative">
               <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-secondary to-secondary/80">
-                <span className="text-muted-foreground text-lg">[Imagem do Produto]</span>
+                <span className="text-muted-foreground text-lg">
+                  <img src={product.imageUrl} alt="" />
+                </span>
               </div>
               <button
                 onClick={() => setLiked(!liked)}

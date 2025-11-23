@@ -11,7 +11,7 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-white border-b border-border">
       <nav className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="text-2xl font-bold text-primary">
-          eco
+          ecobuild
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
