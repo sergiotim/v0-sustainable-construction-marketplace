@@ -1119,3 +1119,157 @@ It can also happen if the client has a browser extension installed which messes 
 [00:47:47.761] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/lista-de-materiais color: rgb(120, 120, 120) color: inherit {"dp":"/lista-de-materiais","o":"http://localhost:3000/lista-de-materiais","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763919499866}
 [00:47:52.886] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/carrinho color: rgb(120, 120, 120) color: inherit {"dp":"/carrinho","o":"http://localhost:3000/carrinho","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763919504990}
 [00:57:30.916] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920083025}
+[00:58:25.169] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/produtos","o":"http://localhost:3000/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920137286}
+[00:58:29.909] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fornecedores color: rgb(120, 120, 120) color: inherit {"dp":"/fornecedores","o":"http://localhost:3000/fornecedores","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920142013}
+[00:58:30.992] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/produtos","o":"http://localhost:3000/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920143098}
+[00:58:31.931] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920144037}
+[00:58:56.651] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/produtos","o":"http://localhost:3000/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920168760}
+[00:58:58.125] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/produto/1 color: rgb(120, 120, 120) color: inherit {"dp":"/produto/[id]","o":"http://localhost:3000/produto/1","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920170238}
+[00:59:01.116] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920173227}
+[00:59:03.233] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fornecedores color: rgb(120, 120, 120) color: inherit {"dp":"/fornecedores","o":"http://localhost:3000/fornecedores","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920175348}
+[00:59:05.620] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/representante color: rgb(120, 120, 120) color: inherit {"dp":"/representante","o":"http://localhost:3000/representante","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920177725}
+[00:59:09.332] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/produtos","o":"http://localhost:3000/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920181443}
+[00:59:11.301] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/representante color: rgb(120, 120, 120) color: inherit {"dp":"/representante","o":"http://localhost:3000/representante","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920183410}
+[00:59:11.685] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fornecedores color: rgb(120, 120, 120) color: inherit {"dp":"/fornecedores","o":"http://localhost:3000/fornecedores","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920183801}
+[00:59:12.052] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920184158}
+[00:59:12.564] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/produto/1 color: rgb(120, 120, 120) color: inherit {"dp":"/produto/[id]","o":"http://localhost:3000/produto/1","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920184680}
+[00:59:13.044] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/produtos","o":"http://localhost:3000/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920185158}
+[00:59:13.603] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920185720}
+[00:59:14.131] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/produtos","o":"http://localhost:3000/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920186240}
+[00:59:14.704] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fornecedores color: rgb(120, 120, 120) color: inherit {"dp":"/fornecedores","o":"http://localhost:3000/fornecedores","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920186809}
+[00:59:15.245] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/produtos","o":"http://localhost:3000/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920187347}
+[00:59:29.733] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920201838}
+[00:59:30.548] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/carrinho color: rgb(120, 120, 120) color: inherit {"dp":"/carrinho","o":"http://localhost:3000/carrinho","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920202660}
+[01:01:12.383] Server  LOG      ✓ Compiled in 61ms
+[01:01:12.555] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\.next\dev\server\chunks\ssr\_53b6f3ed._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:01:12.557] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:01:12.561] Server  ERROR   C:\Users\sergiogabriel\Documents\GitHub\v0-sustainable-construction-marketplace\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:01:12.567] Server  ERROR    ⨯ ReferenceError: image is not defined
+[01:01:12.825] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:01:12.825] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/carrinho" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         suppresshydrationwarning="true"
+-                         data-lt-installed="true"
+                        >
+                  ...
+
+[01:01:12.957] Browser ERROR   uncaughtError: ReferenceError: image is not defined
+[01:01:12.958] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:01:12.958] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/carrinho","route":"/carrinho"}
+[01:01:12.958] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/carrinho color: rgb(120, 120, 120) color: inherit {"dp":"/carrinho","o":"http://localhost:3000/carrinho","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920305062}
+[01:01:17.315] Server  LOG      ✓ Compiled in 73ms
+[01:01:17.438] Browser ERROR   ./app/carrinho/page.tsx:27:5
+Parsing ecmascript source code failed
+  25 |     co2: 130,
+  26 |     distance: 5,
+> 27 |     ,
+     |     ^
+  28 |     image:"/images/cuumeira.webp"
+  29 |   },
+  30 |   {
+
+Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/carrinho/page.tsx [Client Component Browser]
+    ./app/carrinho/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/carrinho/page.tsx [Client Component SSR]
+    ./app/carrinho/page.tsx [Server Component]
+[01:01:19.569] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:01:19.704] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:01:19.704] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/carrinho","route":"/carrinho"}
+[01:01:19.704] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/carrinho color: rgb(120, 120, 120) color: inherit {"dp":"/carrinho","o":"http://localhost:3000/carrinho","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920311817}
+[01:01:22.920] Server  LOG      ✓ Compiled in 42ms
+[01:01:38.548] Server  LOG      ✓ Compiled in 41ms
+[01:01:40.812] Server  LOG      ✓ Compiled in 43ms
+[01:01:48.413] Server  LOG      ✓ Compiled in 35ms
+[01:01:49.625] Server  LOG      ✓ Compiled in 38ms
+[01:01:49.714] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[01:01:49.714] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[01:01:51.521] Server  LOG      ✓ Compiled in 38ms
+[01:01:51.623] Browser ERROR   ./app/carrinho/page.tsx:155:37
+Parsing ecmascript source code failed
+  153 |                     <div className="w-32 h-32 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0">
+  154 |                       <span className="text-muted-foreground text-sm text-center">
+> 155 |                         <img src={} alt="" />
+      |                                     ^^^
+  156 |                       </span>
+  157 |                     </div>
+  158 |
+
+Expected '</', got 'alt'
+
+Import traces:
+  Client Component Browser:
+    ./app/carrinho/page.tsx [Client Component Browser]
+    ./app/carrinho/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/carrinho/page.tsx [Client Component SSR]
+    ./app/carrinho/page.tsx [Server Component]
+[01:02:09.306] Server  LOG      ✓ Compiled in 63ms
+[01:02:09.417] Browser ERROR   ./app/carrinho/page.tsx:155:40
+Parsing ecmascript source code failed
+  153 |                     <div className="w-32 h-32 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0">
+  154 |                       <span className="text-muted-foreground text-sm text-center">
+> 155 |                         <img src={item.} alt="" />
+      |                                        ^
+  156 |                       </span>
+  157 |                     </div>
+  158 |
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/carrinho/page.tsx [Client Component Browser]
+    ./app/carrinho/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/carrinho/page.tsx [Client Component SSR]
+    ./app/carrinho/page.tsx [Server Component]
+[01:02:13.961] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:02:14.090] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:02:14.090] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/carrinho","route":"/carrinho"}
+[01:02:14.090] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/carrinho color: rgb(120, 120, 120) color: inherit {"dp":"/carrinho","o":"http://localhost:3000/carrinho","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920366205}
+[01:02:24.554] Server  LOG      ✓ Compiled in 45ms
+[01:02:27.221] Server  LOG      ✓ Compiled in 36ms
+[01:02:30.134] Server  LOG      ✓ Compiled in 39ms
+[01:02:34.180] Server  LOG      ✓ Compiled in 38ms
+[01:02:38.426] Server  LOG      ✓ Compiled in 39ms
+[01:02:40.565] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:02:40.681] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:02:40.681] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/carrinho","route":"/carrinho"}
+[01:02:40.681] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/carrinho color: rgb(120, 120, 120) color: inherit {"dp":"/carrinho","o":"http://localhost:3000/carrinho","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763920392799}
